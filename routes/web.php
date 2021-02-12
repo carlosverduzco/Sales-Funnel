@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SolicitudController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::resource('solicitudes',SolicitudController::class);
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/descarga', function () {
+    return view('dashboard');
+})->name('dashboard');

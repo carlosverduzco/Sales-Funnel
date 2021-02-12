@@ -27,20 +27,21 @@
           <h2>¡Solo 20 Vouchers disponibles!</h2>
           <form
             class="Input-Form"
-            method="get"
             autocomplete="on"
             onsubmit="return validation()"
+            method="post"
+            action="{{ route('solicitudes.store') }}"
           >
+            @csrf
             <div id="error_message"></div>
-            <!-- <input type="text" placeholder="Tu nombre" /><br /> -->
             <input
               name="name"
+              type="text"
               placeholder="Tu nombre"
               required
               autocomplete="name"
               id="name"
             />
-            <!-- <input type="email" placeholder="Tu correo electrónico" /><br /> -->
             <input
               type="email"
               name="email"
@@ -49,7 +50,6 @@
               autocomplete="email"
               id="email"
             />
-            <!-- <input type="tel" placeholder="Tu numero telefonico" /><br /> -->
             <input
               type="tel"
               name="phone"
