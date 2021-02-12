@@ -1,0 +1,181 @@
+body {
+  background-image: url(../Resources/backgroung.jpg);
+  background-color: rgba(255, 255, 255, 0.6);
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Oswald", sans-serif;
+}
+.Container {
+  max-width: 1000px;
+  margin: 0 auto;
+  height: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  flex-wrap: inherit;
+  text-align: inherit;
+  flex: 1;
+}
+.Header {
+  /* background-color: cadetblue; */
+  background-color: rgba(95, 158, 160, 0.9);
+  background-blend-mode: lighten;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Header figure {
+  height: 90%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+
+.Header img {
+  height: 90%;
+  /* background-blend-mode: lighten; */
+}
+.Form {
+  margin: 10px;
+  /* text-align: -webkit-center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.Hero {
+  width: 50%;
+  background-color: white;
+  border: black solid 1px;
+  border-radius: 5px;
+  padding: 15px;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  flex-wrap: inherit;
+  /* text-align: -webkit-center; */
+}
+.Hero h1 {
+  font-size: 55px;
+  margin: auto;
+}
+.Hero h2 {
+  font-size: 35px;
+  margin: auto;
+}
+#error_message {
+  margin-bottom: 0px;
+  padding: 0px;
+  background: #ea4436;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+}
+.Input-Form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  justify-content: space-around;
+  padding: 3px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+}
+.Input-Form input {
+  border-radius: 5px;
+  width: inherit;
+  height: 30px;
+  border: gray 1px solid;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 5px 15px;
+  margin: 15px auto 10px;
+}
+.Input-Form button {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 10px;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 5px auto 0;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+.Input-Form button:hover {
+  background-color: transparent;
+  border: 5px solid black;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.Address {
+  height: 450px;
+  max-width: 100%;
+}
+.Map {
+  height: 100%;
+  max-width: 100%;
+  padding: 15px;
+  text-align: center;
+  margin: 10px;
+}
+.Map iframe {
+  height: 100% !important;
+  width: 100% !important;
+}
+.Footer {
+  /* background-color: cadetblue; */
+  background-color: rgba(95, 158, 160, 0.97);
+  background-blend-mode: lighten;
+  height: 140px;
+  text-align: center;
+  margin-top: 50px;
+  padding: 5px;
+}
+.Footer img {
+  height: 70%;
+  margin: auto auto 5px;
+}
+.Footer h5 {
+  margin: 0;
+}
+
+@media screen and (max-width: 792px) and (min-width: 321px) {
+  .Hero {
+    width: 90%;
+  }
+  .Hero h1 {
+    font-size: 40px;
+    margin: auto;
+  }
+  .Hero h2 {
+    font-size: 25px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 328px) {
+  .Hero {
+    width: 90%;
+  }
+  .Hero h1 {
+    font-size: 35px;
+    margin: auto;
+  }
+  .Hero h2 {
+    font-size: 20px;
+    margin: auto;
+  }
+}
