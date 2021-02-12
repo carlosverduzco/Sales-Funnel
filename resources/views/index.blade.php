@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oferta</title>
-    <link rel="icon" href="Resources/your_logo.png" />
+    <link rel="icon" href="{{ asset('Resources/your_logo.png') }}" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald&family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="Styles/Estilos.css" />
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="{{ asset('css/Estilos.css') }}" />
+    <script defer src="{{ asset('js/script.js') }}"></script>
   </head>
   <body>
     <header class="Header">
       <div class="Container">
         <figure>
-          <img src="Resources/your_logo.png" alt="QDENTAL" />
+          <img src="{{ asset('img/your_logo.png') }}" alt="Logo QDENTAL" title="Logo QDENTAL"/>
         </figure>
       </div>
     </header>
@@ -79,7 +79,7 @@
     </section>
     <footer class="Footer">
       <div class="Container">
-        <img src="Resources/your_logo.png" alt="QDENTAL" />
+        <img src="{{ asset('img/your_logo.png') }}" alt="Logo QDENTAL" title="Logo QDENTAL" />
         <h5>QDENTAL - Todos los derechos reservados</h5>
       </div>
     </footer>
