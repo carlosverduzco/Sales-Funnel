@@ -3,20 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Oferta</title>
-    <link rel="icon" href="{{ asset('Resources/your_logo.png') }}" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>{{ config('app.name', 'Q Dental') }}</title>
+    <link rel="icon" href="{{ secure_asset('Resources/your_logo.png') }}" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald&family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="{{ asset('css/Estilos.css') }}" />
-    <script defer src="{{ asset('js/script.js') }}"></script>
+    <link rel="stylesheet" href="{{ secure_asset('css/Estilos.css') }}" />
+    <script defer src="{{ secure_asset('js/script.js') }}"></script>
   </head>
   <body>
     <header class="Header">
       <div class="Container">
         <figure>
-          <img src="{{ asset('img/your_logo.png') }}" alt="Logo QDENTAL" title="Logo QDENTAL"/>
+          <img src="{{ secure_asset('img/your_logo.png') }}" alt="Logo QDENTAL" title="Logo QDENTAL"/>
         </figure>
       </div>
     </header>
@@ -79,7 +80,7 @@
     </section>
     <footer class="Footer">
       <div class="Container">
-        <img src="{{ asset('img/your_logo.png') }}" alt="Logo QDENTAL" title="Logo QDENTAL" />
+        <img src="{{ secure_asset('img/your_logo.png') }}" alt="Logo QDENTAL" title="Logo QDENTAL" />
         <h5>QDENTAL - Todos los derechos reservados</h5>
       </div>
     </footer>
